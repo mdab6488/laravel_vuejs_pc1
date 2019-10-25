@@ -87,10 +87,28 @@
             </div>
         </div>
     </div> --}}
-    <div class="flex-center position-ref full-height">
+    <div class="flex-center position-ref">
         <div class="container">
-            <h1>Basic Data Binding</h1>
+            <h1>Basic Data Binding:</h1>
             <basic-data-binding></basic-data-binding>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>List Javascript Event Listeners:</h1>
+                    <list></list>
+                </div>
+                <div class="col-md-6">
+                    <h1>List Vue Event Listeners:</h1>
+                    <vue-event-listener></vue-event-listener>
+                </div>
+            </div>
+            <hr>
+            <h1>Attribute and Class Binding:</h1>
+            <attribute-and-class></attribute-and-class>
+            <hr>
+            <h1>The Need for Computed Properties:</h1>
+            <theneed-for-computedproperties></theneed-for-computedproperties>
+            <hr>
         </div>
     </div>
 @endsection
