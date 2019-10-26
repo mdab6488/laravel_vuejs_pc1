@@ -109,6 +109,56 @@
             <h1>The Need for Computed Properties:</h1>
             <theneed-for-computedproperties></theneed-for-computedproperties>
             <hr>
+            <h1>Component 101:</h1>
+            <component-101>
+                Laravel Framwork
+            </component-101>
+            <component-101>
+                Vue Js
+            </component-101>
+            <hr>
+            <h1>Component With Component:</h1>
+            <component-with-component></component-with-component>
+            <hr>
+            <h1>Practical Component Exercise 1 Message:</h1>
+            <pra-component-ex1-message
+                title="The standard Lorem Ipsum passage, used since the 1500s"
+                message="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.">
+            </pra-component-ex1-message>
+            <hr>
+            <h1>Practical Component Exercise 2 Modal:</h1>
+            <pra-component-ex2-modal
+                button="Show Modal"
+                title="The Title">
+                mdab
+            </pra-component-ex2-modal>
+            <hr>
+            <h1>Practical Component Exercise 3 Tabs:</h1>
+            <tabs>
+                <tab name="laravel" :selected="true">
+                    Learning Laravel
+                </tab>
+                <tab name="php">
+                    Learning Php
+                </tab>
+                <tab name="vuejs">
+                    Learning vuejs
+                </tab>
+            </tabs>
+            <hr>
+            <h1>Component Communication Example 1 Custom Events:</h1>
+            <coupon></coupon>
+            <hr>
+            <h1>Named Slots in a Nutshell:</h1>
+            <named-slots-in-a-nutshell
+                >
+            </named-slots-in-a-nutshell>
+            <hr>
+            <h1>Single-Use Components and Inline Templates:</h1>
+            <single-use-components-and-inline-template
+                >
+            </single-use-components-and-inline-template>
+            <hr>
         </div>
     </div>
 @endsection
