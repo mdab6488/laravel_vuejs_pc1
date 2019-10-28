@@ -102,6 +102,16 @@ Vue.component(
     require('./basic_pc/SingleUseComponentsAndInlineTempates.vue').default
 );
 
+Vue.component(
+    'vue-axios',
+    require('./basic_pc/VueAjaxRequestWithAxios.vue').default
+);
+
+Vue.component(
+    'object-oriented-form',
+    require('./components/ObjectOrientedForm.vue').default
+);
+
 const app = new Vue({
     el: '#app',
     // data: {

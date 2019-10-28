@@ -1,4 +1,7 @@
 @extends('layout.master')
+@section('title')
+    Welcome To Fucking Coding World
+@endsection
 @section('style')
     <style>
         html, body {
@@ -150,14 +153,99 @@
             <coupon></coupon>
             <hr>
             <h1>Named Slots in a Nutshell:</h1>
-            <named-slots-in-a-nutshell
-                >
-            </named-slots-in-a-nutshell>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Default Data</h4>
+                    <named-slots-in-a-nutshell
+                        >
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </named-slots-in-a-nutshell>
+                </div>
+                <div class="col-md-6">
+                    <h4>Slot Data</h4>
+                    <named-slots-in-a-nutshell
+                        >
+                        <template slot="header">
+                            Larave
+                        </template>
+                        <form
+                            class="text-left">
+                            <div
+                                class="form-group">
+                                <label
+                                    for="exampleInputEmail1">
+                                    Email address
+                                </label>
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="exampleInputEmail1"
+                                    aria-describedby="emailHelp"
+                                    placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label
+                                    for="exampleInputPassword1">
+                                    Password
+                                </label>
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+                            <button
+                                type="submit"
+                                class="btn btn-primary">
+                                Submit
+                            </button>
+                        </form>
+                        <template slot="footer">
+                            20 days ago
+                        </template>
+                    </named-slots-in-a-nutshell>
+                </div>
+            </div>
             <hr>
             <h1>Single-Use Components and Inline Templates:</h1>
             <single-use-components-and-inline-template
-                >
+                inline-template>
+                <div>
+                    <h1>Your Progress Through is the course: </h1>
+                    <div class="progress">
+                        <div
+                            class="progress-bar"
+                            v-bind:style="{ width: ProjectStatus + '%' }"
+                            >@{{ ProjectStatus }}%</div>
+                    </div>
+                    <br>
+                    <button
+                        type="button"
+                        class="btn btn-primary btn-block"
+                        v-if="ProjectStatus != 100"
+                        @click="ProjectStatus += 10"
+                        >Update Progress</button>
+                </div>
             </single-use-components-and-inline-template>
+            <hr>
+            <h1>Vue Ajax Request With Axios:</h1>
+            <vue-axios></vue-axios>
+            <hr>
+            <h1>Project List:</h1>
+            @foreach ($projects as $project)
+                <div class="card">
+                    <div class="card-body">
+                        <h3>{{ $project->title }}</h3>
+                        {{ $project->body }}
+                    </div>
+                </div>
+                <br>
+            @endforeach
+            <br>
+            <h1>Object Oriented Form:</h1>
+            <object-oriented-form></object-oriented-form>
             <hr>
         </div>
     </div>

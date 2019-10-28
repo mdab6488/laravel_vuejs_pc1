@@ -11,6 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/codes', function()
+{
+    return ['php', 'vuejs', 'paython', 'javascript', 'laravel', 'etc'];
 });
+
+Route::get('/', 'ProjectsController@index');
+Route::post('/projects', 'ProjectsController@store');

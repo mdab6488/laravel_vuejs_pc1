@@ -1,12 +1,12 @@
-<template>
-    <div>
-        Hello
-    </div>
-</template>
+
 
 <script>
     export default {
-        
+        data() {
+            return {
+                ProjectStatus: 30,
+            }
+        },
     }
 </script>
 
