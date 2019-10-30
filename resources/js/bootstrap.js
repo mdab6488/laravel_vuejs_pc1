@@ -26,6 +26,8 @@ import axios from 'axios';
 
 import _ from 'lodash';
 
+import VueRouter from 'vue-router';
+
 import Form from './utilities/Form';
 
 /*= ===================================
@@ -45,3 +47,4 @@ window._ = _;
 Methods
 ex: Vue.use(vmodal);
 ====================================== */
+Vue.use(VueRouter);

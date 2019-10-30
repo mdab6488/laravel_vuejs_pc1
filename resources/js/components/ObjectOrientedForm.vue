@@ -15,7 +15,6 @@
                     class="form-text text-danger"
                     v-if="form.errors.has('title')"
                     v-text="form.errors.get('title')">
-                    We'll never share your email with anyone else.
                 </small>
             </div>
             <div 
@@ -31,7 +30,6 @@
                     class="form-text text-danger"
                     v-if="form.errors.has('body')"
                     v-text="form.errors.get('body')">
-                    We'll never share your email with anyone else.
                 </small>
             </div>
             <input 
@@ -44,8 +42,6 @@
 </template>
 
 <script>
-
-
     export default {
         data() {
             return {
@@ -58,7 +54,8 @@
         
         methods: {
             onProjectSubmit() {
-                this.form.post('/projects')
+                this.form
+                    .post('/projects')
                     .then(data => alert('Submitting....'))
                     .catch(errors => console.log(errors));
             },

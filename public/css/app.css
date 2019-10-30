@@ -11100,7 +11100,124 @@ a.text-dark:focus {
   }
 }
 
-#app {
-  padding: 60px 0px;
+body {
+  background: #ecf0f5;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.p-t-60 {
+  padding-top: 60px;
+}
+
+.p-b-60 {
+  padding-bottom: 60px;
+}
+
+.fix-menu {
+  background: #0073aa;
+  margin: -25px;
+  margin-bottom: 0px;
+  padding: 20px 0px;
+}
+
+.fix-menu a {
+  font-size: 16px;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.welcome {
+  position: relative;
+  width: 100%;
+}
+
+.welcome aside.main-sidebar {
+  background: #23282d;
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  width: 240px;
+  color: #fff;
+}
+
+.welcome aside.main-sidebar .header {
+  background: #0073aa;
+  padding-top: 8px;
+  padding-bottom: 3px;
+}
+
+.welcome aside.main-sidebar .header h2 {
+  font-size: 25px;
+  letter-spacing: 15px;
+}
+
+.welcome aside.main-sidebar .header h2 span {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.welcome aside.main-sidebar ul.sidebar-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.welcome aside.main-sidebar ul.sidebar-menu li {
+  text-transform: capitalize;
+  font-size: 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.welcome aside.main-sidebar ul.sidebar-menu li.is-active {
+  border-left: 4px solid #0073aa;
+  background: #000;
+  color: #fff !important;
+}
+
+.welcome aside.main-sidebar ul.sidebar-menu li.is-active a {
+  color: #fff !important;
+  padding-left: 16px;
+}
+
+.welcome aside.main-sidebar ul.sidebar-menu li:hover {
+  background: #000;
+}
+
+.welcome aside.main-sidebar ul.sidebar-menu li a {
+  color: #b8c7ce;
+  display: block;
+  padding: 15px 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  text-decoration: none;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.welcome aside.main-sidebar ul.sidebar-menu li a.menu-btn {
+  background: #0073AA;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  padding: 15px 0px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.welcome .content-wrapper {
+  margin-left: 240px;
+  padding: 25px;
+}
+
+.welcome .content-wrapper .main-content {
+  padding-top: 14px;
 }
 

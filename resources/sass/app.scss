@@ -1,6 +1,110 @@
 //
-@import "node_modules/bootstrap/scss/bootstrap";
+@import 'node_modules/bootstrap/scss/bootstrap';
 
-#app{
-    padding: 60px 0px;
+$color: #0073aa;
+
+body {
+    background: #ecf0f5;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.p-t-60 {
+    padding-top: 60px;
+}
+.p-b-60 {
+    padding-bottom: 60px;
+}
+.fix-menu{
+    background: $color;
+    margin: -25px;
+    margin-bottom: 0px;
+    padding: 20px 0px;
+    a {
+        font-size: 16px;
+        color: #fff;
+        margin-right: 20px;
+    }
+}
+.welcome {
+    position: relative;
+    width: 100%;
+    aside {
+        &.main-sidebar {
+            background: #23282d;
+            position: absolute;
+            height: 100vh;
+            top: 0;
+            width: 240px;
+            color: #fff;
+            .header {
+                background: $color;
+                padding-top: 8px;
+                padding-bottom: 3px;
+                h2 {
+                    font-size: 25px;
+                    letter-spacing: 15px;
+                    span {
+                        display: block;
+                        font-size: 13px;
+                        letter-spacing: 1px;
+                        font-style: italic;
+                        font-weight: normal;
+                    }
+                }
+            }
+            ul {
+                &.sidebar-menu {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    li {
+                        text-transform: capitalize;
+                        font-size: 15px;
+                        transition: 0.4s;
+                        &.is-active {
+                            border-left: 4px solid $color;
+                            background: #000;
+                            color: #fff !important;
+                            a {
+                                color: #fff !important;
+                                padding-left: 16px;
+                            }
+                        }
+                        &:hover {
+                            background: #000;
+                        }
+                        a {
+                            color: #b8c7ce;
+                            display: block;
+                            padding: 15px 10px;
+                            transition: 0.4s;
+                            text-decoration: none;
+                            padding-left: 20px;
+                            cursor: pointer;
+                            &.menu-btn {
+                                background: #0073AA;
+                                position: absolute;
+                                width: 100%;
+                                bottom: 0;
+                                text-align: center;
+                                padding: 15px 0px;
+                                font-weight: bold;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .content-wrapper {
+        margin-left: 240px;
+        padding: 25px;
+        .main-content{
+            padding-top: 14px;
+        }
+    }
 }

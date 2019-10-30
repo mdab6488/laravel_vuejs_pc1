@@ -3,6 +3,9 @@ Imaports
 ====================================== */
 import './bootstrap';
 
+import store from './models/SharedState101';
+
+import router from './router';
 /*= ===================================
 Components
 ====================================== */
@@ -112,8 +115,15 @@ Vue.component(
     require('./components/ObjectOrientedForm.vue').default
 );
 
+Vue.component(
+    'vue-coupon',
+    require('./basic_pc/CustomInputComponent.vue').default
+);
+
 const app = new Vue({
     el: '#app',
+
+    router,
     // data: {
     //     name: 'MD AB',
     // },
@@ -122,4 +132,23 @@ const app = new Vue({
     //         name: 'MD AB',
     //     };
     // },
+
+    // data: {
+    //     coupon: '',
+    // },
 });
+
+// new Vue({
+//     el: '#one',
+//     data: {
+//         foo: 'bar',
+//         shared: store.user.name,
+//     },
+// });
+// new Vue({
+//     el: '#two',
+//     data: {
+//         foo: 'barrrr',
+//         shared: store,
+//     },
+// });
