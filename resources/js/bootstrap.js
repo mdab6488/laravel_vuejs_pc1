@@ -28,6 +28,10 @@ import _ from 'lodash';
 
 import VueRouter from 'vue-router';
 
+import VueGlide from 'vue-glide-js';
+
+import 'vue-glide-js/dist/vue-glide.css';
+
 import Form from './utilities/Form';
 
 /*= ===================================
@@ -48,3 +52,5 @@ Methods
 ex: Vue.use(vmodal);
 ====================================== */
 Vue.use(VueRouter);
+
+Vue.use(VueGlide);

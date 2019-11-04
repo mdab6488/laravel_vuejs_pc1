@@ -11102,6 +11102,9 @@ a.text-dark:focus {
 
 body {
   background: #ecf0f5;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 a:hover {
@@ -11136,7 +11139,7 @@ a:hover {
 
 .welcome aside.main-sidebar {
   background: #23282d;
-  position: absolute;
+  position: fixed;
   height: 100vh;
   top: 0;
   width: 240px;
@@ -11173,6 +11176,7 @@ a:hover {
   font-size: 15px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  position: relative;
 }
 
 .welcome aside.main-sidebar ul.sidebar-menu li.is-active {
@@ -11201,7 +11205,16 @@ a:hover {
   cursor: pointer;
 }
 
-.welcome aside.main-sidebar ul.sidebar-menu li a.menu-btn {
+.welcome .content-wrapper {
+  margin-left: 240px;
+  padding: 25px;
+}
+
+.welcome .content-wrapper .main-content {
+  padding-top: 14px;
+}
+
+.menu-btn-area .menu-btn {
   background: #0073AA;
   position: absolute;
   width: 100%;
@@ -11210,14 +11223,126 @@ a:hover {
   padding: 15px 0px;
   font-weight: bold;
   text-transform: uppercase;
+  color: #fff;
 }
 
-.welcome .content-wrapper {
-  margin-left: 240px;
-  padding: 25px;
+.welcome div.nav-after {
+  position: absolute;
+  background: #23282D;
+  left: 240px;
+  top: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  padding-right: 30vw;
 }
 
-.welcome .content-wrapper .main-content {
-  padding-top: 14px;
+.welcome div.nav-after ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.welcome div.nav-after .right {
+  padding: 20px 0px;
+}
+
+.welcome div.nav-after .right ul li {
+  display: inline-block;
+  width: 45%;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.welcome div.nav-after .left ul li {
+  text-transform: uppercase !important;
+  font-size: 16px;
+  padding: 8px 15px;
+}
+
+.welcome div.nav-after .left ul li:hover {
+  background: #0073AA;
+}
+
+.testimonials {
+  background: #F3F5F6;
+  position: relative;
+}
+
+.testimonials .left {
+  width: 60%;
+  min-height: 400px;
+  padding: 0px 15px;
+  display: table;
+  height: 100%;
+}
+
+.testimonials .left ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.testimonials .left ul li {
+  display: inline-block;
+  width: 13%;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.testimonials .left ul li.active img {
+  border-color: #0073aa;
+  border-style: solid;
+}
+
+.testimonials .left ul li img {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 50%;
+  width: 32px;
+  border: 2px;
+  border-style: unset;
+}
+
+.testimonials .left ul li img:hover {
+  border-color: #0073aa;
+  border-style: solid;
+}
+
+.testimonials .right {
+  background: #E4E4E4;
+  position: absolute;
+  top: 0;
+  width: 40%;
+  display: table;
+  height: 100%;
+  left: 60%;
+  padding: 0px 15px;
+}
+
+.testimonials .right .review-user-infos {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.testimonials .right img {
+  border-radius: 50%;
+  width: 70px;
+}
+
+.testimonials .right h5 {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.testimonials .right button {
+  margin-top: 20px;
 }
 

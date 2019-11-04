@@ -31,6 +31,34 @@
                     <a>
                         Mega Menu
                     </a>
+                    <div class="nav-after" style="display: none;">
+                        <div class="mega-menu">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="left">
+                                        <ul>
+                                            <li>PHP</li>
+                                            <li>LARAVEL</li>
+                                            <li>TESTING</li>
+                                            <li>VUE</li>
+                                            <li>TOOLING</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="right">
+                                        <ul>
+                                            <li>Be Awesome in PHPStorm</li>
+                                            <li>Build a Staging Server</li>
+                                            <li>CSS Grids for Everyone</li>
+                                            <li>Envoyer</li>
+                                            <li>Git Me Some Version Control</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
                     <a href="/faq">
@@ -42,11 +70,11 @@
                         Contact Us
                     </a>
                 </li>
-                <li>
+                <div class="menu-btn-area">
                     <a href="/basicPractice" target="_blank" class="menu-btn">
                         Basic Practice
                     </a>
-                </li>
+                </div>
             </ul>
         </aside>
         <div class="content-wrapper">

@@ -5,6 +5,9 @@ $color: #0073aa;
 
 body {
     background: #ecf0f5;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 a:hover{
@@ -34,7 +37,7 @@ a:hover{
     aside {
         &.main-sidebar {
             background: #23282d;
-            position: absolute;
+            position: fixed;
             height: 100vh;
             top: 0;
             width: 240px;
@@ -64,6 +67,7 @@ a:hover{
                         text-transform: capitalize;
                         font-size: 15px;
                         transition: 0.4s;
+                        position: relative;
                         &.is-active {
                             border-left: 4px solid $color;
                             background: #000;
@@ -84,16 +88,6 @@ a:hover{
                             text-decoration: none;
                             padding-left: 20px;
                             cursor: pointer;
-                            &.menu-btn {
-                                background: #0073AA;
-                                position: absolute;
-                                width: 100%;
-                                bottom: 0;
-                                text-align: center;
-                                padding: 15px 0px;
-                                font-weight: bold;
-                                text-transform: uppercase;
-                            }
                         }
                     }
                 }
@@ -105,6 +99,136 @@ a:hover{
         padding: 25px;
         .main-content{
             padding-top: 14px;
+        }
+    }
+}
+.menu-btn-area{
+    .menu-btn {
+        background: #0073AA;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+        padding: 15px 0px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+.welcome {
+    div{
+        &.nav-after{
+            position: absolute;
+            background: #23282D;
+            left: 240px;
+            top: 0;
+            width: 100vw;
+            overflow-x: hidden;
+            padding-right: 30vw;
+            .mega-menu {
+                
+            }
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            .right {
+                padding: 20px 0px;
+                ul {
+                    li {
+                        display: inline-block;
+                        width: 45%;
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+            .left {
+                ul {
+                    li {
+                        text-transform: uppercase !important;
+                        font-size: 16px;
+                        padding: 8px 15px;
+                        &:hover {
+                            background: #0073AA;
+                        }
+                    }
+                }
+            }
+        }   
+    }
+}
+
+.testimonials {
+    background: #F3F5F6;
+    position: relative;
+    .left{
+        width: 60%;
+        min-height: 400px;
+        padding: 0px 15px;
+        display: table;
+        height: 100%;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: table-cell;
+            vertical-align: middle;
+            li {
+                display: inline-block;
+                width: 13%;
+                margin-bottom: 15px;
+                cursor: pointer;
+                &.active {
+                    img{
+                        border-color: $color;
+                        border-style: solid;
+                    }
+                }
+                img {
+                    transition: .2s;
+                    border-radius: 50%;
+                    width: 32px;
+                    border: 2px;
+                    border-style: unset;
+                    &:hover {
+                        border-color: $color;
+                        border-style: solid;
+                    }
+                }
+            }
+        }
+    }
+    .right {
+        background: #E4E4E4;
+        position: absolute;
+        top: 0;
+        width: 40%;
+        display: table;
+        height: 100%;
+        left: 60%;
+        padding: 0px 15px;
+        .review-user-infos {
+            display: table-cell;
+            vertical-align: middle;
+            width: 100%;
+            height: 100%;
+            font-size: 12px;
+            line-height: 20px;
+        }
+        img {
+            border-radius: 50%;
+            width: 70px;
+        }
+        h5 {
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        button {
+            margin-top: 20px;
         }
     }
 }

@@ -3,9 +3,10 @@ Imaports
 ====================================== */
 import './bootstrap';
 
-import store from './models/SharedState101';
+// import store from './models/SharedState101';
 
 import router from './router';
+
 /*= ===================================
 Components
 ====================================== */
@@ -118,6 +119,23 @@ Vue.component(
 Vue.component(
     'vue-coupon',
     require('./basic_pc/CustomInputComponent.vue').default
+);
+
+/*
+FOR DASHBORD APP
+*/
+// Vue.component(
+//     'dummy',
+//     require('./basic_pc/CustomInputComponent.vue').default
+// );
+Vue.component(
+    'flickity-carousel-slider',
+    require('./components/CarouselSlider.vue').default
+);
+
+Vue.component(
+    'vue-glide-slider',
+    require('./components/VueGlideSlider.vue').default
 );
 
 const app = new Vue({

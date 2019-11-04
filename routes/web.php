@@ -25,6 +25,14 @@ Route::get('/', function()
     return view('welcome');
 });
 
+//PROJECT
 Route::get('/basicPractice', 'ProjectsController@index');
-
 Route::post('/projects', 'ProjectsController@store');
+
+//STATUS
+Route::get('/statuses', 'StatusController@index');
+Route::post('/statuses', 'StatusController@store');
+
+//Testimonialis
+Route::get('/testimonials', 'TestimonialsController@index');
+Route::post('/testimonials', 'TestimonialsController@store');
