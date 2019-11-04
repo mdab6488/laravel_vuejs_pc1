@@ -11111,6 +11111,10 @@ a:hover {
   text-decoration: none;
 }
 
+.p-60 {
+  padding: 60px 0px;
+}
+
 .p-t-60 {
   padding-top: 60px;
 }
@@ -11119,17 +11123,12 @@ a:hover {
   padding-bottom: 60px;
 }
 
-.fix-menu {
-  background: #0073aa;
-  margin: -25px;
-  margin-bottom: 0px;
-  padding: 20px 0px;
+.swal-footer {
+  text-align: center !important;
 }
 
-.fix-menu a {
-  font-size: 16px;
-  color: #fff;
-  margin-right: 20px;
+.swal-footer .swal-button {
+  background: #0073aa !important;
 }
 
 .welcome {
@@ -11144,6 +11143,7 @@ a:hover {
   top: 0;
   width: 240px;
   color: #fff;
+  z-index: 9999;
 }
 
 .welcome aside.main-sidebar .header {
@@ -11190,8 +11190,12 @@ a:hover {
   padding-left: 16px;
 }
 
+.welcome aside.main-sidebar ul.sidebar-menu li .active {
+  background: #0073aa;
+}
+
 .welcome aside.main-sidebar ul.sidebar-menu li:hover {
-  background: #000;
+  background: #0073aa;
 }
 
 .welcome aside.main-sidebar ul.sidebar-menu li a {
@@ -11205,27 +11209,6 @@ a:hover {
   cursor: pointer;
 }
 
-.welcome .content-wrapper {
-  margin-left: 240px;
-  padding: 25px;
-}
-
-.welcome .content-wrapper .main-content {
-  padding-top: 14px;
-}
-
-.menu-btn-area .menu-btn {
-  background: #0073AA;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  text-align: center;
-  padding: 15px 0px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #fff;
-}
-
 .welcome div.nav-after {
   position: absolute;
   background: #23282D;
@@ -11234,6 +11217,7 @@ a:hover {
   width: 100vw;
   overflow-x: hidden;
   padding-right: 30vw;
+  height: 50vh;
 }
 
 .welcome div.nav-after ul {
@@ -11253,14 +11237,60 @@ a:hover {
   margin-bottom: 5px;
 }
 
+.welcome div.nav-after .right ul li a {
+  padding: 5px 10px;
+}
+
+.welcome div.nav-after .left {
+  position: fixed;
+  width: 18%;
+  height: 100%;
+}
+
 .welcome div.nav-after .left ul li {
   text-transform: uppercase !important;
   font-size: 16px;
-  padding: 8px 15px;
+  padding: 14px 15px;
 }
 
 .welcome div.nav-after .left ul li:hover {
   background: #0073AA;
+}
+
+.welcome .content-wrapper {
+  position: relative;
+  z-index: 1;
+  margin-left: 240px;
+  padding: 25px;
+}
+
+.welcome .content-wrapper .main-content {
+  padding-top: 14px;
+}
+
+.welcome .content-wrapper .fix-menu {
+  background: #0073aa;
+  margin: -25px;
+  margin-bottom: 0px;
+  padding: 20px 0px;
+}
+
+.welcome .content-wrapper .fix-menu a {
+  font-size: 16px;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.menu-btn-area .menu-btn {
+  background: #0073AA;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  padding: 15px 0px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .testimonials {
@@ -11344,5 +11374,17 @@ a:hover {
 
 .testimonials .right button {
   margin-top: 20px;
+}
+
+[data-modal=supportModel] .v--modal-box {
+  left: 240px !important;
+  width: 100% !important;
+  height: 100vh !important;
+  border-radius: 0px !important;
+  color: #222;
+}
+
+[data-modal=supportModel] .v--modal-box .supportModel {
+  margin-right: 240px;
 }
 

@@ -13,24 +13,22 @@ body {
 a:hover{
     text-decoration: none;
 }
-
+.p-60 {
+    padding: 60px 0px;
+}
 .p-t-60 {
     padding-top: 60px;
 }
 .p-b-60 {
     padding-bottom: 60px;
 }
-.fix-menu{
-    background: $color;
-    margin: -25px;
-    margin-bottom: 0px;
-    padding: 20px 0px;
-    a {
-        font-size: 16px;
-        color: #fff;
-        margin-right: 20px;
+.swal-footer {
+    text-align: center !important;
+    .swal-button{
+        background: $color !important;
     }
 }
+
 .welcome {
     position: relative;
     width: 100%;
@@ -42,6 +40,7 @@ a:hover{
             top: 0;
             width: 240px;
             color: #fff;
+            z-index: 9999;
             .header {
                 background: $color;
                 padding-top: 8px;
@@ -77,8 +76,11 @@ a:hover{
                                 padding-left: 16px;
                             }
                         }
+                        .active {
+                            background: $color;
+                        }
                         &:hover {
-                            background: #000;
+                            background: $color;
                         }
                         a {
                             color: #b8c7ce;
@@ -94,11 +96,73 @@ a:hover{
             }
         }
     }
+    div{
+        &.nav-after{
+            position: absolute;
+            background: #23282D;
+            left: 240px;
+            top: 0;
+            width: 100vw;
+            overflow-x: hidden;
+            padding-right: 30vw;
+            height: 50vh;
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            .right {
+                padding: 20px 0px;
+                ul {
+                    li {
+                        display: inline-block;
+                        width: 45%;
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                        a {
+                            padding: 5px 10px;
+                        }
+                    }
+                }
+            }
+            .left {    
+                position: fixed;
+                width: 18%;
+                height: 100%;
+                ul {
+                    li {
+                        text-transform: uppercase !important;
+                        font-size: 16px;
+                        padding: 14px 15px;
+                        &:hover {
+                            background: #0073AA;
+                        }
+                    }
+                }
+            }
+        }   
+    }
     .content-wrapper {
+        position: relative;
+        z-index: 1;
         margin-left: 240px;
         padding: 25px;
         .main-content{
             padding-top: 14px;
+        }
+        .fix-menu{
+            background: $color;
+            margin: -25px;
+            margin-bottom: 0px;
+            padding: 20px 0px;
+            // position: fixed;
+            // width: 100%;
+            // z-index: 99;
+            a {
+                font-size: 16px;
+                color: #fff;
+                margin-right: 20px;
+            }
         }
     }
 }
@@ -113,50 +177,6 @@ a:hover{
         font-weight: bold;
         text-transform: uppercase;
         color: #fff;
-    }
-}
-.welcome {
-    div{
-        &.nav-after{
-            position: absolute;
-            background: #23282D;
-            left: 240px;
-            top: 0;
-            width: 100vw;
-            overflow-x: hidden;
-            padding-right: 30vw;
-            .mega-menu {
-                
-            }
-            ul {
-                list-style: none;
-                margin: 0;
-                padding: 0;
-            }
-            .right {
-                padding: 20px 0px;
-                ul {
-                    li {
-                        display: inline-block;
-                        width: 45%;
-                        font-size: 14px;
-                        margin-bottom: 5px;
-                    }
-                }
-            }
-            .left {
-                ul {
-                    li {
-                        text-transform: uppercase !important;
-                        font-size: 16px;
-                        padding: 8px 15px;
-                        &:hover {
-                            background: #0073AA;
-                        }
-                    }
-                }
-            }
-        }   
     }
 }
 
@@ -229,6 +249,19 @@ a:hover{
         }
         button {
             margin-top: 20px;
+        }
+    }
+}
+
+[data-modal="supportModel"] {
+    .v--modal-box {
+        left: 240px !important;
+        width: 100% !important;
+        height: 100vh !important;
+        border-radius: 0px !important;
+        color: #222;
+        .supportModel {
+            margin-right: 240px;
         }
     }
 }

@@ -32,6 +32,19 @@ import VueGlide from 'vue-glide-js';
 
 import 'vue-glide-js/dist/vue-glide.css';
 
+// npm install --save portal-vue
+// https://github.com/LinusBorg/portal-vue
+import PortalVue from 'portal-vue';
+
+// npm install vue-js-modal --save
+// https://www.npmjs.com/package/vue-js-modal
+import vmodal from 'vue-js-modal';
+
+// javascript sweetalert
+// npm install sweetalert --save
+// https://sweetalert.js.org/guides/
+import swal from 'sweetalert';
+
 import Form from './utilities/Form';
 
 /*= ===================================
@@ -54,3 +67,7 @@ ex: Vue.use(vmodal);
 Vue.use(VueRouter);
 
 Vue.use(VueGlide);
+
+Vue.use(PortalVue);
+
+Vue.use(vmodal);

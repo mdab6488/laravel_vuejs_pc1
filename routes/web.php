@@ -36,3 +36,9 @@ Route::post('/statuses', 'StatusController@store');
 //Testimonialis
 Route::get('/testimonials', 'TestimonialsController@index');
 Route::post('/testimonials', 'TestimonialsController@store');
+
+Route::get('/series', 'SeriesController@index');
+
+
+Route::get('/contact', 'ContactController@index');
+Route::post('/contact', 'ContactController@store');

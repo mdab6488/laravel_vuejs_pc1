@@ -128,6 +128,7 @@ FOR DASHBORD APP
 //     'dummy',
 //     require('./basic_pc/CustomInputComponent.vue').default
 // );
+
 Vue.component(
     'flickity-carousel-slider',
     require('./components/CarouselSlider.vue').default
@@ -136,6 +137,13 @@ Vue.component(
 Vue.component(
     'vue-glide-slider',
     require('./components/VueGlideSlider.vue').default
+);
+
+Vue.component('series-menu', require('./components/SeriesMenu.vue').default);
+
+Vue.component(
+    'support-button',
+    require('./components/SupportButton.vue').default
 );
 
 const app = new Vue({

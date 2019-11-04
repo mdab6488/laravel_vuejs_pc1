@@ -27,49 +27,13 @@
                 <router-link tag="li" to="/testimonials_components" exact>
                     <a>Ts Comp</a>
                 </router-link>
-                <li>
-                    <a>
-                        Mega Menu
-                    </a>
-                    <div class="nav-after" style="display: none;">
-                        <div class="mega-menu">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="left">
-                                        <ul>
-                                            <li>PHP</li>
-                                            <li>LARAVEL</li>
-                                            <li>TESTING</li>
-                                            <li>VUE</li>
-                                            <li>TOOLING</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-md-9">
-                                    <div class="right">
-                                        <ul>
-                                            <li>Be Awesome in PHPStorm</li>
-                                            <li>Build a Staging Server</li>
-                                            <li>CSS Grids for Everyone</li>
-                                            <li>Envoyer</li>
-                                            <li>Git Me Some Version Control</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+                <series-menu></series-menu>
                 <li>
                     <a href="/faq">
                         Faq
                     </a>
                 </li>
-                <li>
-                    <a>
-                        Contact Us
-                    </a>
-                </li>
+                <support-button></support-button>
                 <div class="menu-btn-area">
                     <a href="/basicPractice" target="_blank" class="menu-btn">
                         Basic Practice
@@ -90,6 +54,7 @@
                 <router-view></router-view>
             </div>
         </div>
+
     </div>
 @endsection
 
