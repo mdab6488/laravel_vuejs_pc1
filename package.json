@@ -11,7 +11,7 @@
     },
     "devDependencies": {
         "@fortawesome/fontawesome-free": "^5.11.2",
-        "axios": "^0.19",
+        "axios": "^0.21",
         "cross-env": "^6.0",
         "eslint": "^6.1.0",
         "eslint-config-airbnb-base": "^14.0.0",
